@@ -11,3 +11,8 @@
     font-size: 15px;
     text-align: center;
 }
+h2 {
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+}
