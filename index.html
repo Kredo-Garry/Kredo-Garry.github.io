@@ -4,345 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Bean</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CSS Pseudo Class</title>
+    <style>
+        div li{
+            background-color: black;
+            color: white;
+            float: left;
+            margin: 5px;
+            padding: 10px;
+            list-style-type: none;
+        }
+        div li:hover{
+            background-color: goldenrod;
+            color: black;
+            padding: 15px;
+        }
+        form{
+            background-color: lightgrey;
+            width: 500px;
+            text-align: center;
+        }
+        form input[type="text"]{
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+        }
+        form input[type="password"]{
+            background-color: green;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+        }
+        .btn{
+            background-color: goldenrod;
+            color: rgb(100, 29, 29);
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Main container -->
-    <div class="wrapper">
 
-        <!-- Start of Navigation -->
-        <div class="nav" id="nav">
-            <h1><a href="">Coffee Bean</a></h1>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#merch">Merchandise</a></li>
-                <li><a href="#discount">Discount</a></li>
-                <li><a href="#onsale">On Sale</a></li>
-                <li><a href="#reservation">Reservation</a></li>
-            </ul>
-        </div>
-        <!-- End of navigation area -->
-
-        <!-- start of banner area -->
-        <div class="banner" id="banner">
-            <div class="banner-text">
-                <h2>Uniquely <span>Fresh Taste</span></h2>
-                <p>Try our tasty coffee bean, produced with unique taste</p>
-                <a href="">Learn More</a>
-            </div>
-        </div>
-        <!-- end of banner area -->
-
-        <!-- start of ads area -->
-        <div class="ads" id="ads">
-            <div class="ads-items ads-item1">
-                <div class="ads-text">
-                    <h3>Seasonal Coffee Flavors</h3>
-                    <a href="">Read More</a>
-                </div>
-            </div>
-            <div class="ads-items ads-item2">
-                <div class="ads-text">
-                    <h3>Coffee Bundle Package</h3>
-                    <a href="">Read More</a>
-                </div>
-            </div>
-        </div>
-        <!-- end of ads area -->
-
-        <!-- Start of merchandise area -->
-
-        <div class="merch" id="merch">
-            <div class="section-header">
-                <span>What Happens Here</span>
-                <h2>Coffee House Merchandise</h2>
-                <hr>
-            </div>
-            <div class="merch-gallery">
-                <div class="merch-items">
-                    <img src="assets/images/merch-img1.jpg" alt="">
-                    <h3>Arabica-Extra Course</h3>
-                    <span>*****</span>
-                    <p>$70.00</p>
-                </div>
-                <div class="merch-items">
-                    <img src="assets/images/merch-img2.jpg" alt="">
-                    <h3>Arabica-Fine Grind</h3>
-                    <span>*****</span>
-                    <p>$70.00</p>
-                </div>
-                <div class="merch-items">
-                    <img src="assets/images/merch-img3.jpg" alt="">
-                    <h3>French Vanilla</h3>
-                    <span>*****</span>
-                    <p>$80.00</p>
-                </div>
-                <div class="merch-items">
-                    <img src="assets/images/merch-img4.jpg" alt="">
-                    <h3>Deluxe Chocolate</h3>
-                    <span>*****</span>
-                    <p>$100.00</p>
-                </div>
-                <div class="merch-items">
-                    <img src="assets/images/merch-img5.jpg" alt="">
-                    <h3>Original Beans</h3>
-                    <span>*****</span>
-                    <p>$100.00</p>
-                </div>
-                <div class="merch-items">
-                    <img src="assets/images/merch-img6.jpg" alt="">
-                    <h3>Paper Pouch</h3>
-                    <span>*****</span>
-                    <p>$71.00</p>
-                </div>
-                <div class="merch-items">
-                    <img src="assets/images/merch-img7.jpg" alt="">
-                    <h3>Freshly Picked</h3>
-                    <span>*****</span>
-                    <p>$71.00</p>
-                </div>
-                <div class="merch-items">
-                    <img src="assets/images/merch-img8.jpg" alt="">
-                    <h3>Mug</h3>
-                    <span>*****</span>
-                    <p>$25.00</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- end of merchandise area -->
-
-        <!-- start of discount area -->
-            <div class="discount" id="discount">
-                <div class="discount-text">
-                    <span>We brew them fresh daily</span>
-                    <h3>Member's Discount Up to 40%</h3>
-                    <a href="">View Products</a>
-                </div>
-            </div>
-        <!-- end of discount area -->
-
-        <!-- start of merch sale area -->
-            <div class="merch" id="merch-sale">
-                <div class="section-header">
-                    <span>What Happens Here</span>
-                    <h2>Merchandise Sale</h2>
-                    <hr>
-                </div>
-                <div class="merch-gallery">
-                    <div class="merch-items">
-                        <img src="assets/images/merch-img9.jpg" alt="">
-                        <h3>Arabica-With Cup</h3>
-                        <span>*****</span>
-                        <p>$90.00</p>
-                    </div>
-                    <div class="merch-items">
-                        <img src="assets/images/merch-img10.jpg" alt="">
-                        <h3>Double Arabica</h3>
-                        <span>*****</span>
-                        <p>$120.00</p>
-                    </div>
-                    <div class="merch-items">
-                        <img src="assets/images/merch-img11.jpg" alt="">
-                        <h3>Paper Pouch</h3>
-                        <span>*****</span>
-                        <p>$100.00</p>
-                    </div>
-                    <div class="merch-items">
-                        <img src="assets/images/merch-img12.jpg" alt="">
-                        <h3>Double Mug</h3>
-                        <span>*****</span>
-                        <p>$40.00</p>
-                    </div>
-                </div>
-            </div>
-        <!-- end of merch sale area -->
-
-        <!-- start of second ads area -->
-        <div class="ads" id="ads-sale">
-            <div class="ads-items ads-item3">
-                <div class="ads-text">
-                    <h3>Coffee Bean Varieties</h3>
-                    <a href="">Read More</a>
-                </div>
-            </div>
-            <div class="ads-items ads-item4">
-                <div class="ads-text">
-                    <h3>Our Barista's Favorite</h3>
-                    <a href="">Read More</a>
-                </div>
-            </div>
-            <div class="ads-items ads-item5">
-                <div class="ads-text">
-                    <h3>The Coffee Best Sellers</h3>
-                    <a href="">Read More</a>
-                </div>
-            </div>
-            <div class="ads-items ads-item6">
-                <div class="ads-text">
-                    <h3>More Than Just The Coffee</h3>
-                    <a href="">Read More</a>
-                </div>
-            </div>
-        </div>
-        <!-- end of second ads area -->
-
-        <!-- start reservation area -->
-        <div class="reservation" id="reservation">
-            <div class="section-header">
-                <h2>Reservation Form</h2>
-                <hr>
-            </div>
-            <form action="" method="post">
-                <div class="form-group">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" name="full_name" id="full-name" placeholder="Last name, First name" required>
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="mail@example.com">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" name="phone" id="phone" placeholder="+6398858878">
-                    <p>Reservation Details</p>
-                    <label for="guest">Number of Guest</label>
-                    <select name="guest" id="guest">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="morethan4">More than 4 person</option>
-                    </select>
-                    <p>Reservation Date</p>
-                    <input type="date" name="res_date" id="res-date" required>
-                    
-                    <p>Reservation Time</p>
-                    <div class="res-time">
-                        <input type="radio" name="time" id="morning" value="morning">
-                        <label for="morning">Morning</label>
-                        <input type="radio" name="time" id="afternoon" value="afternoon">
-                        <label for="afternoon">Afternoon</label>
-                        <input type="radio" name="time" id="night" value="night">
-                        <label for="night">Night</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="request">Additional Request</label>
-                    <textarea name="request" id="request" cols="30" rows="10"></textarea>
-
-                    <h3>Payment</h3>
-                    
-                    <p>Payment Accepted Cards</p>
-                    <label for="name-card">Full Name</label>
-                    <input type="text" name="name_card" id="name-card" placeholder="John Doe" required>
-                    <label for="cc-number">Credit Card Number</label>
-                    <input type="number" name="cc_number" id="cc-number" placeholder="23585822258" required>
-                    <div class="res-agreement">
-                        <input type="checkbox" name="res_agreement" id="res-agreement">
-                        <label for="agree">I agree in the terms and conditions.</label>
-                    </div>
-                    <input type="submit" name="submit" value="SEND">
-                </div>
-            </form>
-        </div>
-        <!-- end of reservation area -->
-        
-        <!-- start of footer -->
-        <div class="footer" id="footer">
-            <div class="footer-contents">
-                <div class="footer-widgets">
-                    <h3>Opening Hours</h3>
-                    <table>
-                        <tr>
-                            <th>Day</th>
-                            <th>******</th>
-                            <th>Availability</th>
-                        </tr>
-                        <tr>
-                            <td>Monday</td>
-                            <td>******</td>
-                            <td>Closed</td>
-                        </tr>
-                        <tr>
-                            <td>Tuesday</td>
-                            <td>******</td>
-                            <td>09:00-22:00</td>
-                        </tr>
-                        <tr>
-                            <td>Wednesday</td>
-                            <td>******</td>
-                            <td>Closed</td>
-                        </tr>
-                        <tr>
-                            <td>Friday</td>
-                            <td>******</td>
-                            <td>09:00-22:00</td>
-                        </tr>
-                        <tr>
-                            <td>Saturday</td>
-                            <td>******</td>
-                            <td>09:00-22:00</td>
-                        </tr>
-                        <tr>
-                            <td>Sunday</td>
-                            <td>******</td>
-                            <td>09:00-22:00</td>
-                        </tr>
-                        
-                    </table>
-                </div>
-                <div class="footer-widgets">
-                    <h3>Latest Post</h3>
-
-                    <h4>Expand your mind, change everything</h4>
-                    <p>14-02-2017</p>
-
-                    <h4>Places To Get Lost</h4>
-                    <p>14-02-2017</p>
-
-                    <h4>Lewis Howes</h4>
-                    <p>14-02-2017</p>
-
-                    <h4>Elevate Your Expectaion</h4>
-                    <p>14-02-2017</p>
-                </div>
-                <div class="footer-widgets">
-                    <h3>Contact Us</h3>
-                    <p>info@coffeebean.com</p>
-                    <p>1-444-123-4559</p>
-                    <p>Raymond Boulevard 224, New York</p>
-
-                    <h3>The Last Standard Post</h3>
-                    <form action="" method="" class="footer-form">
-                        <input type="search" name="search" id="">
-                        <input type="submit" value="search">
-                    </form>
-                </div>
-                <div class="footer-widgets">
-                    <h3>Other Locations</h3>
-
-                    <h4>Coffee Bean Philippines</h4>
-                    <p>1234 IT Park</p>
-                    <p>Cebu City</p>
-
-                    <h4>Coffee Bean Tokyo</h4>
-                    <p>1234 Business Park</p>
-                    <p>Tokyo Japan</p>
-                </div>
-            </div>
-        </div>
-            <div class="footer-social">
-                <div class="social-widget">
-                    <h3>Coffee Bean</h3>
-                </div>
-                <div class="social-widget">
-                    <a href="https://www.facebook.com"><img src="assets/images/icon-fb.png" alt="facebook icon"></a>
-                    <a href="https://www.instagram.com"><img src="assets/images/icon-ig.png" alt="instagram icon"></a>
-                    <a href="https://www.twitter.com"><img src="assets/images/icon-tw.png" alt="twitter icon"></a>
-                </div>
-                <div class="social-widget">
-                    <p>&copy; 2022 | Kredo IT Abroad</p>
-                </div>
-            </div>
-        <!-- end of footer -->
+    <div>
+        <li>Homepage</li>
+        <li>Newspage</li>
+        <li>Contact Us</li>
     </div>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <form action="" method="post" autocomplete="off" style="margin-left: 50px;">
+        <p>Please login</p>
+        <label for="">Username</label>
+        <input type="text" name="username" id="username"><br>
+        <br>
+        <label for="">Password</label>
+        <input type="password" name="password" id="password"><br>
+        <br>
+        <input type="submit" name="btn_login" value="Login" class="btn">
+    </form>
+
+
+
+
+        
+    
 </body>
 </html>
